@@ -14,7 +14,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # font pango:monospace 8
-font pango:Hack Nerd Font 9
+font pango:Hack Nerd Font 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -119,16 +119,16 @@ bindsym $mod+a focus parent
 ###############################################################################
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 " Terminal "
-set $ws2 " Firefox "
-set $ws3 " Development "
+set $ws1 "  Terminal "
+set $ws2 "  Firefox "
+set $ws3 " 󰚗 Development "
 set $ws4 " Workspace 4 "
 set $ws5 " Workspace 5 "
 set $ws6 " Workspace 6 "
 set $ws7 " Workspace 7 "
 set $ws8 " Workspace 8 "
 set $ws9 " Workspace 9 "
-set $ws10 " Music "
+set $ws10 " 󰎄 Music "
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
