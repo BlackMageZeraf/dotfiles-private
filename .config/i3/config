@@ -122,12 +122,12 @@ bindsym $mod+a focus parent
 set $ws1 " Terminal "
 set $ws2 " Firefox "
 set $ws3 " Development "
-set $ws4 " 4 "
-set $ws5 " 5 "
-set $ws6 " 6 "
-set $ws7 " 7 "
-set $ws8 " 8 "
-set $ws9 " 9 "
+set $ws4 " Workspace 4 "
+set $ws5 " Workspace 5 "
+set $ws6 " Workspace 6 "
+set $ws7 " Workspace 7 "
+set $ws8 " Workspace 8 "
+set $ws9 " Workspace 9 "
 set $ws10 " Music "
 
 # switch to workspace
