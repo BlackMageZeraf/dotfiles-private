@@ -6,8 +6,11 @@ mkdir ~/Documents
 # Updating System to Latest
 sudo pacman -Syu && sudo pacman -Syu -y
 
+# Removing softwares that are preinstalled by arch linux that are not required in this Biased PC experience Setup.
+sudo pacman -R htop
+
 # Install softwares
-sudo pacman -S git ttf-firacode-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom
+sudo pacman -S git ttf-firacode-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom btop
 
 # Installing Go Language
 # Go Version 1.21.5 Latest as per 7th December 2023
