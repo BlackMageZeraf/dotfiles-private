@@ -26,6 +26,10 @@ bun -v
 # Installing Starship Prompt
 curl -fsSL https://starship.rs/install.sh | sh
 
+# Installing Github Cli
+sudo pacman -S github-cli
+git config --global user.email "ali.hussain.abid.246@outlook.com" && git config --global user.name "Ali Hussain Abid"
+
 # Copying Settings files from repo to ~ directory
 cp .bashrc ~
 cp .alacritty.yml ~
