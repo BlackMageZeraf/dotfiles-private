@@ -1,20 +1,21 @@
 #!/bin/bash
 
-mkdir ~/Downloads
-mkdir ~/Documents
+mkdir $HOME/Downloads
+mkdir $HOME/Documents
 
 # Updating System to Latest
 sudo pacman -Syu && sudo pacman -Syu -y
 
 # Install softwares
-sudo pacman -S git ttf-firacode-nerd ttf-hack-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom btop curl unzip man
+sudo pacman -S git ttf-firacode-nerd ttf-hack-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom btop curl unzip man github-cli
 
 source ~/.bashrc
 
 # Installing Go Language
 # Go Version 1.21.5 Latest as per 7th December 2023
-wget https://go.dev/dl/go1.21.5.linux-amd64.tar.gz && mv go1.21.5.linux-amd64.tar.gz ~/Downloads
+wget https://go.dev/dl/go1.21.5.linux-amd64.tar.gz && mv go1.21.5.linux-amd64.tar.gz $HOME/Downloads
 sudo tar -C /usr/local -xzf ~/Downloads/go1.21.5.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
 source ~/.bashrc
 go version
 
@@ -26,9 +27,6 @@ bun -v
 # Installing Starship Prompt
 curl -fsSL https://starship.rs/install.sh | sh
 
-# Installing Github Cli
-sudo pacman -S github-cli
-git config --global user.email "ali.hussain.abid.246@outlook.com" && git config --global user.name "Ali Hussain Abid"
 
 # Copying Settings files from repo to ~ directory
 cp .bashrc ~
