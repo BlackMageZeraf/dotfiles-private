@@ -3,3 +3,5 @@ This document lists down all the REQUIREMENTS packages and other dependencies re
 
 ## Arch
 `sudo pacman -Sy i3 neovim git curl`
+
+### Rest of dependencies will be installed by `install.sh` script
