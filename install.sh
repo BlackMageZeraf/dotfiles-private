@@ -4,7 +4,7 @@
 sudo pacman -Syu && sudo pacman -Syu -y
 
 # Instal
-sudo pacman -S git ttf-firacode-nerd alacritty nemo rofi feh firefox nvidia nvidia-utils nvidia-settings picom
+sudo pacman -S git ttf-firacode-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom
 
 # Copying Settings files from repo to ~ directory
 cp .bashrc ~
