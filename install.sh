@@ -7,7 +7,9 @@ mkdir $HOME/Documents
 sudo pacman -Syu && sudo pacman -Syu -y
 
 # Install softwares
-sudo pacman -S git ttf-firacode-nerd ttf-hack-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom btop curl unzip man github-cli
+sudo pacman -S git ttf-firacode-nerd ttf-hack-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom btop curl unzip man github-cli nnn neovim
+
+sudo pacman -R xterm dmenu nano
 
 source ~/.bashrc
 
