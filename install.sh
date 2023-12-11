@@ -6,6 +6,16 @@ mkdir $HOME/Documents
 # Updating System to Latest
 sudo pacman -Syu && sudo pacman -Syu -y
 
+# Install Neovim from source
+## Development Dependencies
+sudo pacman -S base-devel cmake unzip ninja curl 
+## Cloning and Building Neovim
+git clone https://github.com/neovim/neovim
+cd neovim
+git checkout stable
+make CMAKE_BUILD_TYPE=Release
+sudo make install
+
 # Install yay
 pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
