@@ -6,8 +6,14 @@ mkdir $HOME/Documents
 # Updating System to Latest
 sudo pacman -Syu && sudo pacman -Syu -y
 
+# Install yay
+pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
+
 # Install softwares
-sudo pacman -S git ttf-firacode-nerd ttf-hack-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom btop curl unzip man github-cli nnn neovim
+sudo pacman -S git ttf-firacode-nerd ttf-hack-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom btop curl unzip man github-cli nnn
 
 # Removing softwares that are preinstalled by arch linux that are not required in this Biased PC experience Setup.
 sudo pacman -R htop xterm dmenu nano
