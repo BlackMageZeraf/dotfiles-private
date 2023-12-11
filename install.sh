@@ -9,7 +9,8 @@ sudo pacman -Syu && sudo pacman -Syu -y
 # Install softwares
 sudo pacman -S git ttf-firacode-nerd ttf-hack-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom btop curl unzip man github-cli nnn neovim
 
-sudo pacman -R xterm dmenu nano
+# Removing softwares that are preinstalled by arch linux that are not required in this Biased PC experience Setup.
+sudo pacman -R htop xterm dmenu nano
 
 source ~/.bashrc
 
@@ -35,9 +36,6 @@ cp .bashrc ~
 cp .alacritty.yml ~
 cp -r .config/ ~
 cp -r Pictures/ ~
-
-# Removing softwares that are preinstalled by arch linux that are not required in this Biased PC experience Setup.
-sudo pacman -R htop xterm 
 
 # Rebooting PC to fully Realize your settings.
 reboot
