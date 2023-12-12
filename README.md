@@ -1,4 +1,4 @@
-# LinuxSettingsBackup
+# dotfiles
 This document lists down all the REQUIREMENTS packages and other dependencies required to run this setup.
 
 ## Pre Installation
