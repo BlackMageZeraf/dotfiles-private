@@ -27,7 +27,7 @@ makepkg -si
 cd ~
 
 # Install softwares
-sudo pacman -S git ttf-firacode-nerd ttf-hack-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom btop curl unzip man github-cli nnn
+sudo pacman -S git ttf-firacode-nerd ttf-hack-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom btop curl unzip man github-cli nnn fish
 
 # Removing softwares that are preinstalled by arch linux that are not required in this Biased PC experience Setup.
 sudo pacman -R htop xterm dmenu nano
