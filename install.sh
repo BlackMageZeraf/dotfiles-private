@@ -29,17 +29,25 @@ cd ~
 # Install softwares
 sudo pacman -S git ttf-firacode-nerd ttf-hack-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom btop curl unzip man github-cli nnn fish
 
+# Changing shell to fish
+echo "Changing Default Shell to fish"
+chsh -s /bin/shell/fish
+
 # Removing softwares that are preinstalled by arch linux that are not required in this Biased PC experience Setup.
 sudo pacman -R htop xterm dmenu nano
 
 source ~/.bashrc
 
+fish
+
 # Installing Go Language
-# Go Version 1.21.5 Latest as per 7th December 2023
-wget https://go.dev/dl/go1.21.5.linux-amd64.tar.gz && mv go1.21.5.linux-amd64.tar.gz $HOME/Downloads
+# Go Version 1.21.5 Latest as per 12th December 2023
+wget https://go.dev/dl/go1.21.5.linux-amd64.tar.gz
+mv go1.21.5.linux-amd64.tar.gz $HOME/Downloads
 sudo tar -C /usr/local -xzf ~/Downloads/go1.21.5.linux-amd64.tar.gz
 set PATH /usr/local/go/bin $PATH
-source ~/.bashrc
+cd ~
+source .config/fish/config.fish
 go version
 
 # Installing Bun Better Javascript Runtime
