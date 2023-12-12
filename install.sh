@@ -16,11 +16,15 @@ git checkout stable
 make CMAKE_BUILD_TYPE=Release
 sudo make install
 
+cd ~
+
 # Install yay
 pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
+
+cd ~
 
 # Install softwares
 sudo pacman -S git ttf-firacode-nerd ttf-hack-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom btop curl unzip man github-cli nnn
