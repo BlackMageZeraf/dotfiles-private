@@ -10,13 +10,13 @@ sudo pacman -Syu && sudo pacman -Syu -y
 ## Development Dependencies
 sudo pacman -S base-devel cmake unzip ninja curl
 ## Cloning and Building Neovim
-git clone https://github.com/neovim/neovim
-cd neovim
-git checkout stable
-make CMAKE_BUILD_TYPE=Release
-sudo make install
-
-cd ~
+# git clone https://github.com/neovim/neovim
+# cd neovim
+# git checkout stable
+# make CMAKE_BUILD_TYPE=Release
+# sudo make install
+#
+# cd ~
 
 # Install yay
 pacman -S --needed git base-devel
@@ -27,7 +27,7 @@ makepkg -si
 cd ~
 
 # Install softwares
-sudo pacman -S git ttf-firacode-nerd ttf-hack-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom btop curl unzip man github-cli nnn fish
+sudo pacman -S git ttf-firacode-nerd ttf-hack-nerd alacritty rofi feh firefox nvidia nvidia-utils nvidia-settings picom btop curl unzip man github-cli nnn fish neovim
 
 # Changing shell to fish
 echo "Changing Default Shell to fish"
@@ -38,8 +38,6 @@ sudo pacman -R htop xterm dmenu nano
 
 source ~/.bashrc
 
-fish
-
 # Installing Go Language
 # Go Version 1.21.5 Latest as per 12th December 2023
 wget https://go.dev/dl/go1.21.5.linux-amd64.tar.gz
@@ -47,7 +45,6 @@ mv go1.21.5.linux-amd64.tar.gz $HOME/Downloads
 sudo tar -C /usr/local -xzf ~/Downloads/go1.21.5.linux-amd64.tar.gz
 set PATH /usr/local/go/bin $PATH
 cd ~
-source .config/fish/config.fish
 go version
 
 # Installing Bun Better Javascript Runtime
@@ -59,7 +56,7 @@ bun -v
 curl -fsSL https://starship.rs/install.sh | sh
 
 # Copying Settings files from repo to ~ directory
-cp .bashrc ~
+# cp .bashrc ~
 cp .alacritty.yml ~
 cp -r .config/ ~
 cp -r Pictures/ ~
