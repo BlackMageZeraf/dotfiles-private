@@ -38,7 +38,7 @@ source ~/.bashrc
 # Go Version 1.21.5 Latest as per 7th December 2023
 wget https://go.dev/dl/go1.21.5.linux-amd64.tar.gz && mv go1.21.5.linux-amd64.tar.gz $HOME/Downloads
 sudo tar -C /usr/local -xzf ~/Downloads/go1.21.5.linux-amd64.tar.gz
-export PATH=$PATH:/usr/local/go/bin
+set PATH /usr/local/go/bin $PATH
 source ~/.bashrc
 go version
 
