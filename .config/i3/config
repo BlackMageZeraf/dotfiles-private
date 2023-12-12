@@ -1,6 +1,6 @@
 set $mod Mod4
 
-font pango:Hack Nerd Font 9
+font pango:Hack Nerd Font 12
 
 exec --no-startup-id dex --autostart --environment i3
 
@@ -140,8 +140,9 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
-	position top
+        status_command SCRIPTS_DIR=~/.config/i3blocks/scripts i3blocks
+        separator_symbol "<200b>"
+	      position top
 }
 
 exec_always feh --bg-max ~/Pictures/2.jpg
