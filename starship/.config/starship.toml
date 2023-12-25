@@ -14,7 +14,7 @@ vimcmd_symbol = "[ ](green)"
 truncation_length = 2
 # Catppuccin 'lavender'
 style = "bold lavender"
-read_only = " 󰌾"
+read_only = " 󰌾 "
 
 [aws]
 symbol = "  "
