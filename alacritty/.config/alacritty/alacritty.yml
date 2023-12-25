@@ -14,7 +14,7 @@ window:
   dynamic_padding: false
   opacity: 0.90
   decorations: none
-  startup_mode: Windowed
+  startup_mode: Maximized
   title: Alacritty
   class:
     instance: Alacritty
